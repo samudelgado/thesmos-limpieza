@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="ASOCIACIÓN THESMOS PARA LA INSERCIÓN SOCIOLABORAL — Todos los enlaces: WhatsApp, email, webs de servicios e Instagram. Inserción sociolaboral en toda España." />
+    <link rel="icon" href="data:," />
+    <title>THESMOS · Enlaces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0B0B16;
+        --bg-soft: #121222;
+        --gold: #D4A944;
+        --gold-bright: #EBC96B;
+        --gold-dim: rgba(212, 169, 68, 0.45);
+        --ink: #F5F0E1;
+        --ink-soft: #B9B4A4;
+        --card: #14142A;
+        --card-hover: #1A1A34;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        background:
+          radial-gradient(ellipse 90% 45% at 50% -5%, rgba(212, 169, 68, 0.10), transparent 60%),
+          var(--bg);
+        color: var(--ink);
+        font-family: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+        min-height: 100vh;
+        min-height: 100dvh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 48px 22px 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* ---------- Cabecera ---------- */
+      .logo {
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        border: 2px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 0 0 0 6px rgba(212, 169, 68, 0.07), 0 0 34px rgba(212, 169, 68, 0.18);
+        background: radial-gradient(circle at 50% 38%, #17172E 0%, #0B0B16 78%);
+      }
+      .logo span {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 56px;
+        font-weight: 600;
+        color: var(--gold);
+        line-height: 1;
+        transform: translateY(-2px);
+      }
+      h1 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 44px;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        margin: 26px 0 0;
+        text-align: center;
+        color: var(--ink);
+        text-indent: 0.22em;
+      }
+      .rule {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 14px 0 10px;
+        width: 190px;
+      }
+      .rule::before, .rule::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--gold-dim));
+      }
+      .rule::after {
+        background: linear-gradient(90deg, var(--gold-dim), transparent);
+      }
+      .rule i {
+        width: 6px;
+        height: 6px;
+        background: var(--gold);
+        transform: rotate(45deg);
+        flex: none;
+      }
+      .subtitle {
+        margin: 0;
+        text-align: center;
+        font-size: 14.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        line-height: 1.6;
+      }
+      .subtitle strong {
+        color: var(--gold);
+        font-weight: 600;
+      }
+
+      /* ---------- Enlaces ---------- */
+      nav {
+        width: 100%;
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        padding: 17px 20px;
+        background: var(--card);
+        border: 1px solid rgba(212, 169, 68, 0.28);
+        border-radius: 14px;
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .link .emoji {
+        font-size: 21px;
+        line-height: 1;
+        flex: none;
+        width: 26px;
+        text-align: center;
+      }
+      .link .label { flex: 1; }
+      .link .arrow {
+        flex: none;
+        color: var(--gold);
+        font-size: 15px;
+        opacity: 0.75;
+        transition: transform 0.18s ease, opacity 0.18s ease;
+      }
+      .link:hover, .link:focus-visible {
+        background: var(--card-hover);
+        border-color: var(--gold);
+        transform: translateY(-1px);
+        outline: none;
+      }
+      .link:hover .arrow, .link:focus-visible .arrow {
+        transform: translateX(3px);
+        opacity: 1;
+      }
+      .link:active { transform: translateY(0); }
+
+      /* Botones destacados: contacto directo */
+      .link.primary {
+        background: linear-gradient(160deg, #D9B452 0%, var(--gold) 55%, #B98F2E 100%);
+        border-color: var(--gold-bright);
+        color: #17130A;
+        font-weight: 600;
+        box-shadow: 0 8px 26px rgba(212, 169, 68, 0.22);
+      }
+      .link.primary .arrow { color: #17130A; }
+      .link.primary:hover, .link.primary:focus-visible {
+        background: linear-gradient(160deg, #E5C05C 0%, #DBB44C 55%, #C09935 100%);
+        border-color: var(--gold-bright);
+      }
+      .link.ghost-primary {
+        border-color: var(--gold);
+        background: rgba(212, 169, 68, 0.08);
+        font-weight: 600;
+      }
+
+      .section-label {
+        margin: 14px 0 -2px;
+        font-size: 12px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-align: center;
+      }
+
+      /* ---------- Pie ---------- */
+      footer {
+        margin-top: 40px;
+        text-align: center;
+      }
+      footer .foot-line {
+        width: 60px;
+        height: 1px;
+        background: var(--gold-dim);
+        margin: 0 auto 16px;
+      }
+      footer p {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        color: var(--ink-soft);
+        line-height: 1.7;
+      }
+      footer .legal {
+        font-size: 12px;
+        color: rgba(185, 180, 164, 0.6);
+        margin-top: 4px;
+      }
+
+      @media (max-width: 380px) {
+        h1 { font-size: 38px; letter-spacing: 0.18em; }
+        .link { font-size: 16px; padding: 16px 17px; }
+        .logo { width: 96px; height: 96px; }
+        .logo span { font-size: 50px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .link, .link .arrow { transition: none; }
+      }
+    </style>
+  <style>
+/* ===== THESMOS · Migración GitHub Pages: logotipo textual + optimización móvil ===== */
+.brand .theta-logo,.hero-logo .theta-logo,.emblem .theta-logo,.disc .theta-logo{display:inline-flex;align-items:center;justify-content:center;background:#10101C;color:#C8A24B;border-radius:50%;font-family:Georgia,'Times New Roman',serif;font-weight:700;line-height:1;flex:none}
+
+img{max-width:100%;height:auto;display:block}
+html,body{overflow-x:hidden}
+@media (max-width:640px){
+h1{font-size:clamp(2rem,8vw,2.9rem)!important;line-height:1.12!important}
+h2{font-size:clamp(1.4rem,5.5vw,2.05rem)!important;line-height:1.22!important}
+section{padding-left:20px;padding-right:20px}
+.wrap{padding-left:20px!important;padding-right:20px!important}
+a.btn,.btn,button,.cta,.link,.menu-btn,.nav-cta,.svc-btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+
+}
+</style>
+    <link rel="canonical" href="https://samudelgado.github.io/thesmos-enlaces/" />
+</head>
+  <body>
+    <main class="wrap">
+      <div class="logo" aria-hidden="true"><span>Θ</span></div>
+
+      <h1>THESMOS</h1>
+      <div class="rule" aria-hidden="true"><i></i></div>
+      <p class="subtitle">Inserción Sociolaboral · <strong>Toda España</strong></p>
+
+      <nav aria-label="Enlaces de THESMOS">
+        <a class="link primary" href="https://wa.me/34604541488?text=Hola%2C%20quiero%20pedir%20un%20presupuesto">
+          <span class="emoji" aria-hidden="true">💬</span>
+          <span class="label">WhatsApp — Pide tu presupuesto</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link ghost-primary" href="mailto:asociacionthesmos@gmail.com">
+          <span class="emoji" aria-hidden="true">📩</span>
+          <span class="label">Email</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <p class="section-label">Nuestras webs</p>
+
+        <a class="link" href="https://samudelgado.github.io/thesmos-web-principal/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🌐</span>
+          <span class="label">Web principal</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-servicios-auxiliares/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🧹</span>
+          <span class="label">Servicios Auxiliares</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-limpieza/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">✨</span>
+          <span class="label">Limpieza</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-jardineria/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🌿</span>
+          <span class="label">Jardinería</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-mantenimiento/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🔧</span>
+          <span class="label">Mantenimiento</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-eventos/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🎉</span>
+          <span class="label">Eventos</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-comercio/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🏪</span>
+          <span class="label">Comercio</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-hosteleria/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">🍽️</span>
+          <span class="label">Hostelería</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://samudelgado.github.io/thesmos-tecnologia/" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">💻</span>
+          <span class="label">Tecnología</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <p class="section-label">Síguenos</p>
+
+        <a class="link" href="https://www.instagram.com/asociacionthesmos" target="_blank" rel="noopener">
+          <span class="emoji" aria-hidden="true">📸</span>
+          <span class="label">Instagram</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+
+      <footer>
+        <div class="foot-line" aria-hidden="true"></div>
+        <p>Asociación sin ánimo de lucro · Empleo digno</p>
+        <p class="legal">Asociación THESMOS para la Inserción Sociolaboral</p>
+      </footer>
+    </main>
+  </body>
+</html>
